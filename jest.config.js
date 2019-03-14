@@ -1,4 +1,5 @@
 module.exports = {
+  rootDir: "./",
   moduleFileExtensions: ["js", "jsx", "json", "vue", "ts", "tsx"],
   transform: {
     "^.+\\.vue$": "vue-jest",
@@ -11,9 +12,7 @@ module.exports = {
     "^@/(.*)$": "<rootDir>/src/$1"
   },
   snapshotSerializers: ["jest-serializer-vue"],
-  testMatch: [
-    "**/tests/unit/**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)"
-  ],
+  testMatch: ["**/*.test.*"],
   testURL: "http://localhost/",
   globals: {
     "ts-jest": {
