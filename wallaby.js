@@ -7,7 +7,7 @@ module.exports = wallaby => {
   return {
     files: [
       "tsconfig.json",
-      "jest.*.js",
+      "jest.config.js",
       "src/**/*",
       { pattern: "src/**/*.test.*", ignore: true }
     ],

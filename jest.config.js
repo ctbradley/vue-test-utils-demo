@@ -12,7 +12,7 @@ module.exports = {
     "^@/(.*)$": "<rootDir>/src/$1"
   },
   snapshotSerializers: ["jest-serializer-vue"],
-  testMatch: ["**/*.test.*"],
+  testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(ts|js)$",
   testURL: "http://localhost/",
   globals: {
     "ts-jest": {
