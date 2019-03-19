@@ -1,16 +1,20 @@
 <template>
   <div class="hello">
-    <VForm :inputText="inputText" :form-name="formName"/>
+    <VFormImport :input-text="inputText" :form-name="formName"/>
+    <VFormRequire :input-text="inputText" :form-name="formName"/>
   </div>
 </template>
 
 <script>
-import VForm from "./VForm.vue";
+import VFormImport from "./VForm.vue";
+
+const VFormRequire = require("./VForm.vue");
 
 export default {
   name: "HelloWorld",
   components: {
-    VForm
+    VFormImport,
+    VFormRequire
   },
   data() {
     return {
