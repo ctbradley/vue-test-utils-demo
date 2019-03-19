@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
-    <VFormImport :input-text="inputText" :form-name="formName"/>
-    <VFormRequire :input-text="inputText" :form-name="formName"/>
+    <VFormImport :form-name="formName" :input-text="inputText"/>
+    <VFormRequire :form-name="formName" :input-text="inputText"/>
   </div>
 </template>
 

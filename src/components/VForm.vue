@@ -1,5 +1,5 @@
 <template>
-  <form>
+  <form :name="formName">
     <input type="text" :value="inputText">
   </form>
 </template>
@@ -8,6 +8,10 @@
 export default {
   name: "VForm",
   props: {
+    /**
+     * comment props to demonstrate behavior
+     */
+    formName: String,
     inputText: String
   }
 };
